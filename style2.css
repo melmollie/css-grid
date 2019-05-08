@@ -21,17 +21,24 @@ body {
 
 a {
     color: #7ca075;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #345744;
 }
 
 h1, h2, h3 {
     margin: 25px 0 -5px 0;
     color: #345744;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
-p {
+main p {
     font-weight: 200;
     line-height: 1.2;
-    color: #1f2262d;
+    color: #1f262d;
 }
 
 .wrapper {
@@ -59,6 +66,10 @@ nav {
     font-size: 19px;
 }
 
+nav .active {
+    color: #7ca075;
+}
+
 nav a {
     color: #345744;
     text-decoration: none;
@@ -66,7 +77,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #7ca075;
+    color: #a3bcaa;
 }
 
 nav li {
@@ -168,6 +179,9 @@ aside a {
 
 .ol-text {
     padding: 50px 30px;
+}
+
+.ol-text h3, p {
     color: #ffffff;
 }
 
@@ -183,7 +197,7 @@ footer {
     grid-area: footer;
     text-align: center;
     padding: 40px 0 20px 0;
-    color: #1f2262d;
+    color: #1f262d;
 }
 
 footer a {
@@ -194,7 +208,7 @@ footer a {
 @media screen and (max-width: 950px) {
     .wrapper {
         grid-template-columns: 1fr; 
-        grid-template-rows: 0.2fr 1fr auto 1fr auto 0.2fr;
+        grid-template-rows: 0.2fr 1fr auto 0.5fr auto 0.2fr;
         grid-template-areas: 
             "nav"
             "header"
@@ -204,7 +218,26 @@ footer a {
             "footer";
     }
 
+    nav li {
+        padding: 30px;
+    }
+
     aside {
         margin-bottom: 50px;
+        padding: 0;
+    }
+
+    aside h2 {
+        margin-left: 60px;
+    }
+
+    aside li {
+        display: inline-block;
+        margin: 0;
+        padding: 10px 30px 20px 30px;
+    }
+
+    .img-wrapper {
+        margin: 0 30px 0 30px;
     }
 }
