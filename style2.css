@@ -124,7 +124,7 @@ main h2 {
 
 aside {
     grid-area: aside; 
-    padding: 0 40px 30px 25px;
+    padding: 0 50px 30px 25px;
     margin: 50px 50px 30px 30px;
     background-color: rgba(255, 255, 255, 0.7);
     color: #345744;
@@ -467,7 +467,7 @@ button {
 }
 
 .rita {
-    background-image: url(img/matthew-smith-100638-unsplash.jpg);
+    background-image: url(img/bruce-dixon-383587-unsplash.jpg);
     background-size: cover; 
     background-position: center;
 }
